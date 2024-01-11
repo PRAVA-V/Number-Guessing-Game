@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./numberGuessing.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content0">
+            <h1>How to Play the Number Guessing Game:</h1>
+            <ul>
+                <li>Objective: The goal of the game is to guess the correct number between 1 and 100.</li>
+                <li>Making a Guess:
+                    Enter your guess in the input field. Make sure your guess is a number between 1 and 100.
+                    Click the "Submit" button to submit your guess.</li>
+                <li>Getting Feedback:
+
+                    After submitting your guess, you'll receive feedback in the form of a message.
+                    If your guess is correct, the message will congratulate you and display the number of attempts it
+                    took.
+                    If your guess is too high, the message will suggest trying a lower number.
+                    If your guess is too low, the message will suggest trying a higher number.</li>
+                <li>Playing Again:
+                    If you want to play again, simply make a new guess after receiving feedback.
+                    The game will continue until you correctly guess the number.</li>
+                <li>Game Over:
+
+                    Once you guess the correct number, the game will announce your victory.</li>
+            </ul>
+        </div>
+        <div class="content1">
+            <div class="head">
+                <h1>Number Guessing Game.!</h1>
+            </div>
+            <div class="input-cont">
+
+                <div><input type="number" id="input" placeholder="Enter the Number here">
+                </div>
+                <div class="btn">
+                    <div>
+                        <button type="button" id="submit" onclick="NumberGuess()">Submit</button>
+                        <button type="button" id="replay" onclick="replay()">Replay</button>
+                    </div>
+
+                </div>
+                <h2 id="store">Enter the number between 1 to 99</h2>
+            </div>
+
+        </div>
+        
+        <div class="footer">
+            <p>@This is Prava ! Front End Developer</p>
+        </div>
+    </div>
+    
+    <script src="./numberGuessing.js"></script>
+</body>
+
+</html>
